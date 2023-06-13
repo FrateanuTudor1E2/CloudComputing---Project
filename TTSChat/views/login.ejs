@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<Head>
+    <title>Login</title>
+    <meta name="description" content="A messaging app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel='stylesheet' href='../stylesheets/globals.css' />
+    <link rel='stylesheet' href='../stylesheets/Home.module.css' />
+    <link rel='stylesheet' href='../stylesheets/Login.css' />
+</Head>
+<main>
+    <header class="main-header">
+        <div class="row-flex">
+        </div>
+    </header>
+    <div class="container-text-area">
+        <div class="text-area">
+            <div class="login-area">
+                <!-- <form onSubmit={submitForm}> -->
+                <form onSubmit={submitForm}>
+                    <label htmlFor="Email"> Email</label>
+                    <input type="text" name="Email" id="Email" required />
+                    <label htmlFor="Password"> Password</label>
+                    <input type="password" name="Password" id="Password" required />
+                    <input type="submit" name="Login" value="Login" id="LoginButton" />
+                </form>
+                <div class="button-container">
+                    <a href="register" class="register-button">Register</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/javascripts/loginMiddleware.js'></script>
+</main>

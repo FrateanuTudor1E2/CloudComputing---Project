@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<Head>
+    <title>Register</title>
+    <meta name="description" content="A messaging app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel='stylesheet' href='../stylesheets/globals.css' />
+    <link rel='stylesheet' href='../stylesheets/Home.module.css' />
+    <link rel='stylesheet' href='../stylesheets/Register.css' />
+</Head>
+<main>
+    <header className="main-header">
+        <div className="row-flex">
+        </div>
+    </header>
+    <div className="container-text-area">
+        <div className="text-area">
+            <div className="register-area">
+                <!-- <form onSubmit={submitForm}> -->
+                <form onSubmit={submitForm}>
+                    <label htmlFor="Email"> Email</label>
+                    <input type="text" name="Email" id="Email" required />
+                    <label htmlFor="Username"> Username</label>
+                    <input type="text" name="Username" id="Username" required />
+                    <label htmlFor="Password"> Password</label>
+                    <input type="password" name="Password" id="Password" required />
+                    <input type="submit" name="Register" value="Register" id="RegisterButton" />
+                </form>
+                <div className="button-container">
+                    <a href="login" class="login-button">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/javascripts/registerMiddleware.js'></script>
+</main>

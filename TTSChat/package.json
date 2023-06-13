@@ -1,0 +1,29 @@
+{
+  "name": "azureapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^5.5.0",
+    "@google-cloud/text-to-speech": "^4.2.2",
+    "@google-cloud/translate": "^7.2.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "firebase": "^9.22.1",
+    "firebase-admin": "^11.8.0",
+    "http-errors": "~1.6.3",
+    "microsoft": "^0.0.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.28.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "npm": ">=9.6.7 <10.0.0",
+    "node": ">=16.0.0 <17.0.0"
+  }
+}

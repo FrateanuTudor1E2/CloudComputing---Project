@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+    <title>Message Me</title>
+    <meta name="description" content="A messaging app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel='stylesheet' href='../stylesheets/globals.css' />
+    <link rel='stylesheet' href='../stylesheets/Home.module.css' />
+    <!-- <script type="module" src="./record_script.js"></script> -->
+</Head>
+<main class="main">
+    <div class="body">
+        <div class="contactlist">
+            <p>Contact 1</p>
+            <p>Contact 2</p>
+        </div>
+        <div class="messagebodycontainer">
+            <div id="messages" class="messagebody">
+                <div class="message">
+                    <p>Message1</p>
+                    <button id="listen">Listen</button>
+                    <button id="translate">Translate</button>
+                </div>
+                <div class="message">
+                    <p id="mtext2">Message2</p>
+                    <button id="listen">Listen</button>
+                    <button id="translate">Translate</button>
+                </div>
+                <div class="message">
+                    <p>Message3</p>
+                    <button id="listen">Listen</button>
+                    <button id="translate">Translate</button>
+                </div>
+                <div class="message">
+                    <p>Message4</p>
+                    <button id="listen">Listen</button>
+                    <button id="translate">Translate</button>
+                </div>
+
+                <div>
+                    <ul class="list-unstyled" id="ul"></ul>
+                </div>
+            </div>
+            <div class="textbox">
+                <input type="text" id="messagebox"></input>
+                <button>Send</button>
+                <button id="recordBtn">Record</button>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src='/javascripts/messages.js'></script>
+    <script src='/javascripts/recording.js'></script>
+</main>
+
+</html>
